@@ -1,0 +1,30 @@
+.wrapper {
+	overflow: hidden;
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&--medium {
+		max-width: 976px;
+	}
+
+
+	.wrapper {
+	/*Any .wrapper class inside another wrapper class, will have 
+	it's padding offset so it's flush with the surrounding content
+	that doesn't have addition padding applied.*/
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&--b-margin {
+
+		margin-bottom: 1rem;
+
+		@mixin atSmall {
+			margin-bottom: 3.875rem;
+		}
+	}
+}
